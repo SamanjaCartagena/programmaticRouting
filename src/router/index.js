@@ -10,32 +10,15 @@ const router = createRouter({
             name:'Home',
             component:HomePage
         },
+        
+      
         {
-            path:'/about',
-            name:'About',
-            component:() => import('../views/AboutPage.vue')
-        },
-        {
-            path:'/brazil',
-            name:'Brazil',
-            component:() => import('../views/BrazilPage.vue')
-        },
-        {
-            path:'/panama',
-            name:'PanamaPage',
-            component:() => import('../views/PanamaPage.vue')
-        },
-        {
-            path:'/jamaica',
-            name:'Jamaica',
-            component:() => import('../views/JamaicaPage.vue')
-        },
-        {
-            path:'/hawaii',
-            name:'Hawaii',
-            component:() => import('../views/HawaiiPage.vue')
+            path:'/destination/:id',
+            name:'destination.show',
+            component:() => import('../views/DestinationShow.vue')
         }
-    ]
+    ],
+    linkActiveClass:'vue-school-active-link'
 })
 
 export default router
