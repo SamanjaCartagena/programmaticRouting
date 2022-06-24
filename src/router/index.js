@@ -13,7 +13,7 @@ const router = createRouter({
         
       
         {
-            path:'/destination/:id',
+            path:'/destination/:id/:slug',
             name:'destination.show',
             component:() => import('../views/DestinationShow.vue')
         }
